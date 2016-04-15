@@ -1,3 +1,7 @@
 scripts/config.py
 *.pyc
 *~
+.phpintel
+./.phpintel
+.phpintel/
+./.phpintel/
