@@ -40,7 +40,8 @@ langarr = {
 "Python": {"extension":"py", "system":"find /usr/bin/ -name python2", "execute":"python2 env/[exename].py[inputfile]"},
 "Python3": {"extension":"py", "system":"find /usr/bin/ -name python3", "execute":"python3 env/[exename].py[inputfile]"},
 "Ruby": {"extension":"rb", "system":"find /usr/bin/ -name ruby", "execute":"ruby env/[exename].rb[inputfile]"},
-"Text": {"extension":"txt"}
+"Text": {"extension":"txt"},
+"C++11": {"extension": "cpp", "system": "find /usr/bin/ -name g++", "compile": "g++ env/[codefilename].cpp -O2 -fomit-frame-pointer -std=c++0x -o env/[codefilename]"+ioeredirect, "execute": "env/[exename][inputfile]"}
 }
 
 # Define useful variables
@@ -66,7 +67,9 @@ def system():
 
 # Program Compilation
 def create(codefilename,language):
-	if(language not in ('C','C++','C#','Java','Pascal')): return
+	if(language not in ('C','C++','C#','Java','Pascal', 'C++11')) :
+		# print("Not C++11")
+		return
 	print("Compiling Code File ...")
 	result = None
 	compilecmd = langarr[language]["compile"]
