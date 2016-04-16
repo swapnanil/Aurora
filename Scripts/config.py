@@ -1,4 +1,4 @@
-db_host="localhost"
-db_user="aurora"
-db_pass="aurora"
-db_name="aurora_main"
+db_host = "localhost"
+db_user = "root"
+db_pass = "googleFb"
+db_name = "aurora_main"

@@ -13,8 +13,8 @@ timeoffset = 0
 # Initialize Database and judge Constants
 sql_hostname = '127.0.0.1'
 sql_hostport = 3306
-sql_username = 'aurora'
-sql_password = 'aurora'
+sql_username = 'root'
+sql_password = 'googleFb'
 sql_database = 'aurora_main'
 HOST, PORT = "127.0.0.1", 8723
 #timeoffset = 19800
